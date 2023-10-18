@@ -1,0 +1,155 @@
+body{
+    background-color: rgb(3, 3, 82);
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+form{
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 12px;
+}
+
+.info{
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    background: #fff;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid rgb(3, 3, 82);
+    border-radius: 12px;
+}
+.seat-available{
+    width: 30px;
+    height: 30px;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    margin-left: 40px;
+    background-color: rgb(3, 3, 82);
+}
+.seat-not-available{
+    width: 30px;
+    height: 30px;
+    margin-left: 40px;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    background-color: #eee;
+}
+.seat-selected{
+    width: 30px;
+    height: 30px;
+    margin-left: 40px;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    background-color: black;
+    color: #fff;
+}
+.selected-seats-box{
+    position: absolute;
+    text-align: center;
+    top: 1%;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid rgb(3, 3, 82);
+    left: 1%;
+    background-color: #fff;
+}
+.selected-seats-box h4{
+    font-size: 22px;
+}
+.selected-seats{
+ display: grid;
+ grid-template-columns: auto auto;
+}
+.selected-seats-name{
+    color: rgb(3, 3, 82);
+    border: 4px solid rgb(3, 3, 82);
+    border-radius: 12px;
+    list-style: none;
+    margin-top: 10px;
+    font-weight: 700;
+    padding: 10px;
+    margin-right: 40px;
+}
+.Book-button{
+    padding: 20px;
+    background-color: rgb(3, 3, 82);
+    color: #fff;
+    border-radius: 12px;
+    cursor: pointer;
+    border: none;
+    margin-top: 20px;
+}
+.Check-button{
+    padding: 20px;
+    background-color: #fff;
+    color: rgb(3, 3, 82);
+    border-radius: 12px;
+    cursor: pointer;
+    border: 1px solid rgb(3, 3, 82);
+    margin-top: 20px;
+}
+#x-mark{
+   position: absolute;
+   top: 2%;
+   right: 4%;
+   font-size: 22px;
+   cursor: pointer;
+}
+.remove-button{
+    padding: 20px;
+    background-color: rgb(3, 3, 82);
+    color: #fff;
+    border-radius: 12px;
+    cursor: pointer;
+    border: none;
+    margin-top: 20px;
+}
+@media screen and (max-width: 1090px) {
+  form{
+    padding: 20px;
+  }
+  .info{
+    padding: 5px;
+  }
+
+  .selected-seats-box h4{
+    font-size: 18px;
+    padding: 5px;
+  }
+  .Book-button{
+    padding: 10px;
+  }
+  .remove-button{
+    padding: 10px;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  .info{
+    position: absolute;
+    top: 5%;
+    right: 2%;
+  }
+  body{
+    display: grid;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 650px) {
+    .info{
+        right: 1%;
+        top: 2%;
+        padding: 0;
+        display: flex;
+    }
+    .info h4{
+        display: inline;
+        margin-right: 30px;
+        font-size: 14px;
+        gap: 0;
+    }
+}
