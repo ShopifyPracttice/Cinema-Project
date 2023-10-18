@@ -44,13 +44,12 @@ const Cinema = () => {
 
     const handleFormSubmit = (e) => {
         e.preventDefault();
-        // Handle the form submission here, and mark the selected seats as "Already reserved"
         const updatedSeats = [...seats];
         selectedSeats.forEach((index) => {
             const seat = updatedSeats[index];
             if (seat.isBooked) {
-                seat.isBooked = false; // Mark the seat as booked
-                seat.SeatSelected = true; // Deselect the seat
+                seat.isBooked = false;
+                seat.SeatSelected = true; 
             }
             console.log(seat);
         });
