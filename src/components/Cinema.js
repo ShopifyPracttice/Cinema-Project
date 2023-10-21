@@ -91,7 +91,7 @@ const Cinema = () => {
 
                 <div>
                     <DrawerWrapper data-drawer={drawer} >
-                    <i class="fa-solid fa-xmark" id="x-mark" onClick={() => setDrawer(false)}></i>
+                    <i className="fa-solid fa-xmark" id="x-mark" onClick={() => setDrawer(false)}></i>
                     <div className="selected-seats-box">
                     <h4>Selected Seats:{selectedSeats.length}</h4>
                     <ul className="selected-seats">
